@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UserList</title>
+</head>
+<body>
+	<h2>Userlist</h2>
+
+	<a href="/Admin_home">Back</a> | 
+	<a href="/logout">logout</a> 
+	<br>
+
+	<table border="1">
+		<tr>
+			<td>ID</td>
+			<td>Name</td>
+			<td>User Name</td>
+			<td>Company Name</td>
+			<td>Contact No</td>
+			<td>Type</td>
+			<td>Action</td>
+		</tr>
+		
+		<!-- <% for(var i=0; i < users.length; i++){ %>
+			
+			<tr>
+				<td><%= users[i][0] %></td>
+				<td><%= users[i][1] %></td>
+				<td><%= users[i][2] %></td>
+				<td><%= users[i][3] %></td>
+			</tr>
+
+		<% } %> -->
+
+		<% 
+			users.forEach( function(std){ %>
+			<tr>
+				<td><%= emp.id %></td>
+				<td><%= emp.name %></td>
+				<td><%= emp.username %></td>
+				<td><%= emp.companyname %></td>
+				<td><%= emp.contactno %></td>
+				<% if(emp.type == 0){%>
+					<td>Admin</td>
+				<%}
+				else{%>
+					<td>Employee</td>
+				<%}%>
+				<td>
+					<a href="/user/edit/<%=emp.id %>">Edit</a> |
+					<a href="/user/delete/<%=emp.id %>">Delete</a>
+					<a href="/user/search/<%=emp.id %>">Search</a>
+				</td>
+			</tr>
+
+		<%
+			}); 
+		%>
+		
+	</table>
+
+</body>
+</html>
