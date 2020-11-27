@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"type="text/css" href="/assets/css/style2.css" media="screen"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Customer</title>
+  </head>
+  
+    <div class="container mt-5">
+      <h4 class="mt-5 text-danger">Customer</h4>
+      <h4 class="mb-5 d-inline">Welcome, <%=user.uname%> </h4>
+    </div>
+
+
+      <div class="z">
+        <a href="/fileupload" class="mr-5">Upload Files</a>
+          <a href="/user/edit/customer/<%= user.uid %>" class="mr-5">
+          <i class="fas fa-edit"></i>Edit Profile
+        </a>
+        <a href="/logout" class="text-danger">
+          <i class="fas fa-power-off  pr-1"></i>Logout
+        </a>
+        </div>
+      </div>
+  
+
+
+  <div class="bcd">
+    <h1 style="text-align:center">Products</h1>
+  </div>
+
+  <div class="abc">
+
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x400/?products,erp"class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x400/?computer" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x400/?watch" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <button type="button" class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="https://source.unsplash.com/400x400/?bikes" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Product 4</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <button type="button" class="btn btn-primary">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+<div class="b">
+  <a href="/contact" class="mr-5">
+  <i class="fas fa-edit"></i>Email Us
+</a>
+</div>
+  
+<div class="c">
+  <a href="/chat" class="mr-5">
+  Start live chat
+</a>
+</div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
